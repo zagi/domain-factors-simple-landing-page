@@ -15,14 +15,14 @@
     <div class="flex flex-col justify-center items-center">
       <div class="mb-2 text-2xl font-extrabold">{{ value }}</div>
       <div class="mb font-light text-gray-700 dark:text-gray-400">
-        <div
+        <button
           :data-tooltip-target="`tooltip-top-${index}`"
           data-tooltip-placement="top"
           type="button"
           class="cursor-pointer text-right"
         >
           {{ title }}<sup>i</sup>
-        </div>
+      </button>
         <div
           :id="`tooltip-top-${index}`"
           role="tooltip"
