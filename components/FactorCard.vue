@@ -19,7 +19,7 @@
           :data-tooltip-target="`tooltip-top-${index}`"
           data-tooltip-placement="top"
           type="button"
-          class="cursor-pointer"
+          class="cursor-pointer text-right"
         >
           {{ title }}<sup>i</sup>
         </div>
@@ -38,6 +38,8 @@
 </template>
 <script setup>
 import CircleProgress from "vue3-circle-progress";
+import { onMounted } from "vue";
+import { initTooltips } from "flowbite";
 defineProps({
     title: {
         type: String,
@@ -67,5 +69,8 @@ defineProps({
       type: String,
       default: "1"
     }
-})
+});
+onMounted(() => {
+  initTooltips();
+});
 </script>

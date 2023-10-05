@@ -24,13 +24,15 @@
             type="button"
             class="text-white w-full bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-lg px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800 cursor-pointer"
           >
+          <a href="https://getname.pl/auth/register" target="_blank" class="flex items-center">
             {{ $t('buy') }}
+          </a>
           </button>
         </div>
         <div
           class="grid gap-4 text-gray-900 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:col-span-2 2xl:grid-cols-4 2xl:col-span-3 dark:text-white"
         >
-          <template v-for="(item, index) in domain.factors">
+          <template v-for="(item, index) in orderedFactors">
             <FactorCard
               :title="$t(`titles.${index}`)"
               :desc="$t(`descriptions.${index}`)"
@@ -46,18 +48,17 @@
   </div>
 </template>
 <script setup>
-import { onMounted } from "vue";
-import { initTooltips } from "flowbite";
 import config from "./config";
 const { colors } = useRandomColors();
 const supabase = useSupabaseClient();
 const url = useRequestURL()
 const domain = ref({});
+const orderedFactors = ref({})
 try {
   const { data, error } = await supabase
     .from("domains")
     .select("*")
-    .eq("name", "przedluzacze24.pl")
+    .eq("name", url.hostname)
     .limit(1)
     .single();
   if (error) {
@@ -72,7 +73,12 @@ try {
   throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
 }
 
-onMounted(() => {
-  initTooltips();
-});
+orderedFactors.value = Object.keys(domain.value.factors).sort().reduce(
+  (obj, key) => { 
+    obj[key] = domain.value.factors[key]; 
+    return obj;
+  }, 
+  {}
+);
+
 </script>
