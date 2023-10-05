@@ -16,7 +16,7 @@
       <div class="mb-2 text-2xl font-extrabold">{{ value }}</div>
       <div class="mb font-light text-gray-700 dark:text-gray-400">
         <div
-          data-tooltip-target="tooltip-top"
+          :data-tooltip-target="`tooltip-top-${index}`"
           data-tooltip-placement="top"
           type="button"
           class="cursor-pointer"
@@ -24,7 +24,7 @@
           {{ title }}<sup>i</sup>
         </div>
         <div
-          id="tooltip-top"
+          :id="`tooltip-top-${index}`"
           role="tooltip"
           style="right: 10px;"
           class="absolute z-10 invisible inline-block py-2 px-1 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
@@ -62,6 +62,10 @@ defineProps({
     chartColor: {
         type: String,
         default: "#4338ca"
+    },
+    index: {
+      type: String,
+      default: "1"
     }
 })
 </script>

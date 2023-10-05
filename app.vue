@@ -28,7 +28,7 @@
           </button>
         </div>
         <div
-          class="grid gap-4 text-gray-900 grid-cols-3 md:grid-cols-2 lg:grid-cols-4 lg:col-span-2 2xl:grid-cols-4 2xl:col-span-3 dark:text-white"
+          class="grid gap-4 text-gray-900 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:col-span-2 2xl:grid-cols-4 2xl:col-span-3 dark:text-white"
         >
           <template v-for="(item, index) in domain.factors">
             <FactorCard
@@ -37,6 +37,7 @@
               :value="parseInt(item, 10)"
               :is-chart="config.isChartMap.includes(index)"
               :chart-color="colors[index]"
+              :index="index"
             ></FactorCard>
           </template>
         </div>
@@ -56,7 +57,7 @@ try {
   const { data, error } = await supabase
     .from("domains")
     .select("*")
-    .eq("name", url.hostname)
+    .eq("name", "przedluzacze24.pl")
     .limit(1)
     .single();
   if (error) {

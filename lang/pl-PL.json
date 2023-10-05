@@ -1,0 +1,32 @@
+{
+    "buy": "Kup domenę",
+    "price": "Cena zakupu",
+    "titles": {
+      "moz_links": "Moz Links",
+      "moz_pa": "Moz PA",
+      "moz_da": "Moz DA",
+      "moz_rank": "Moz Rank",
+      "maj_ref_domains": "Majestic Ref. Domains",
+      "maj_ips": "Majestic IP's",
+      "maj_cf": "Majestic CF",
+      "maj_tf": "Majestic TF",
+      "a_dr": "Ahrefs DR",
+      "a_rank": "Ahrefs rank",
+      "a_keywords": "Ahrefs keywords",
+      "a_trafic": "Ahrefs traffic"
+    },
+    "descriptions": {
+      "moz_links": "Odnosi się to do liczby zewnętrznych linków (backlinków) wskazujących na konkretną stronę internetową, jak podaje narzędzie SEO Moz.",
+      "moz_pa": "Page Authority to metryka opracowana przez Moz, która przewiduje potencjał rankingowy strony internetowej w wynikach wyszukiwania. Opiera się ona na profilu linków strony i innych czynnikach.",
+      "moz_da": "Domain Authority, również opracowana przez Moz, to metryka przewidująca, jak dobrze strona internetowa lub domena prawdopodobnie zajmie miejsce w wynikach wyszukiwania. Uwzględnia ogólny profil linków domeny.",
+      "moz_rank": "Moz Rank to metryka mierząca popularność linków do strony internetowej. Jest podobna do PageRank firmy Google, ale dostosowana do algorytmu Moz.",
+      "maj_ref_domains": "Ta metryka od Majestic SEO wskazuje liczbę unikalnych domen, które łączą się z określoną witryną internetową lub stroną.",
+      "maj_ips": "Majestic IP's reprezentuje liczbę unikalnych adresów IP, które łączą się z witryną internetową. Pomaga to określić różnorodność źródeł linków.",
+      "maj_cf": "Przepływ Cytatów to metryka od Majestic, która ilościowo ocenia wpływ lub znaczenie strony internetowej lub domeny na podstawie liczby linków, które prowadzą do niej.",
+      "maj_tf": "Trust Flow, również od Majestic, mierzy wiarygodność strony internetowej lub domeny na podstawie jakości linków i wiarygodności źródeł linków.",
+      "a_dr": "Ocena Domeny Ahrefs to metryka oceniająca profil linków domeny, dostarczając wskazówki co do jej autorytetu i potencjału rankingowego.",
+      "a_rank": "Ranking Ahrefs to ranking popularności witryny w porównaniu do wszystkich innych witryn w bazie danych Ahrefs. Niższe liczby oznaczają większą popularność.",
+      "a_keywords": "Ta metryka reprezentuje liczbę słów kluczowych, na które witryna lub strona internetowa zajmuje pozycję w bazie danych słów kluczowych Ahrefs.",
+      "a_trafic": "Ahrefs dostarcza szacunkową ilość ruchu organicznego generowanego przez witrynę internetową. Pomaga to ocenić widoczność witryny w wynikach wyszukiwania."
+    }
+  }

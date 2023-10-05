@@ -1,0 +1,32 @@
+{
+    "buy": "Buy the domain",
+    "price": "Sell price",
+    "titles": {
+      "moz_links": "Moz Links",
+      "moz_pa": "Moz PA",
+      "moz_da": "Moz DA",
+      "moz_rank": "Moz Rank",
+      "maj_ref_domains": "Majestic Ref. Domains",
+      "maj_ips": "Majestic IP's",
+      "maj_cf": "Majestic CF",
+      "maj_tf": "Majestic TF",
+      "a_dr": "Ahrefs DR",
+      "a_rank": "Ahrefs rank",
+      "a_keywords": "Ahrefs keywords",
+      "a_trafic": "Ahrefs traffic"
+    },
+    "descriptions": {
+      "moz_links": "This refers to the number of external links (backlinks) pointing to a specific web page, as reported by Moz's SEO tools.",
+      "moz_pa": "Page Authority is a metric developed by Moz to predict the ranking potential of a web page on search engines. It is based on the page's link profile and other factors.",
+      "moz_da": "Domain Authority, also developed by Moz, is a metric that predicts how well a website or domain is likely to rank in search engine results. It takes into account the overall link profile of the domain.",
+      "moz_rank": "Moz Rank is a metric that measures the link popularity of a webpage. It's similar to Google's PageRank but is specific to Moz's algorithm.",
+      "maj_ref_domains": "This metric from Majestic SEO indicates the number of unique domains that are linking to a specific website or webpage.",
+      "maj_ips": "Majestic IP's represents the number of unique IP addresses that are linking to a website. It can help identify the diversity of linking sources.",
+      "maj_cf": "Citation Flow is a metric from Majestic that quantifies the influence or importance of a webpage or domain based on the number of links pointing to it.",
+      "maj_tf": "Trust Flow, also from Majestic, measures the trustworthiness of a webpage or domain based on the quality of backlinks and the trustworthiness of the linking sources.",
+      "a_dr": "Ahrefs' Domain Rating is a metric that assesses the backlink profile of a domain, providing an indication of its authority and ranking potential.",
+      "a_rank": "Ahrefs Rank is a ranking of a website's popularity in comparison to all other websites in the Ahrefs database. Lower numbers indicate higher popularity.",
+      "a_keywords": "This metric represents the number of keywords that a website or webpage ranks for in Ahrefs' keyword database.",
+      "a_trafic": "Ahrefs provides an estimate of the organic search traffic a website receives. This can help gauge the site's visibility in search engine results."
+    }
+  }
