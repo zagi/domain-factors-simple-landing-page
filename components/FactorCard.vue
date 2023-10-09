@@ -4,7 +4,7 @@
   >
     <div>
       <CircleProgress
-        :percent="value"
+        :percent="chartValue"
         :size="50"
         :border-width="5"
         :border-bg-width="5"
@@ -38,9 +38,9 @@
 </template>
 <script setup>
 import CircleProgress from "vue3-circle-progress";
-import { onMounted } from "vue";
+import { onMounted, computed } from "vue";
 import { initTooltips } from "flowbite";
-defineProps({
+const props = defineProps({
     title: {
         type: String,
         required: true
@@ -70,6 +70,9 @@ defineProps({
       default: "1"
     }
 });
+const chartValue = computed(() => {
+  return props.index == 'moz_rank' ? props.value * 10 : props.value;
+})
 onMounted(() => {
   initTooltips();
 });
